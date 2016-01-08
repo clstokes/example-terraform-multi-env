@@ -21,5 +21,5 @@ From each environment's directory (e.g. terraform/staging):
 
 `terraform push -vcs=false -name=$ATLAS_USERNAME/$(basename $(pwd)) ../../`
 
-> The `empty.tf` in the root directory is to prevent Terraform
+> The [`empty.tf`](blob/master/empty.tf) in the root directory is **required** to prevent Terraform
 from returning an error when pushing from the root directory.
