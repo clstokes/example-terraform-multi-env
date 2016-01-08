@@ -4,7 +4,7 @@ module "common" {
 }
 
 variable "environment" {
-  default = "staging"
+  default = "staging2"
 }
 
 output "environment" {
