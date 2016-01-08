@@ -7,6 +7,6 @@ output "message" {
 
 resource "null_resource" "debug2" {
   provisioner "local-exec" {
-    command = "pwd && tree"
+    command = "pwd && find ."
   }
 }
