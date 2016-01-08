@@ -4,6 +4,7 @@ module "common" {
 }
 
 variable "environment" {
+  default = "production"
 }
 
 output "environment" {
