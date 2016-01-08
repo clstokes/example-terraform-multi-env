@@ -2,10 +2,10 @@ variable "environment" {
 }
 
 output "message" {
-  value = "Common config for ${var.environment} at 11:09."
+  value = "Common config for ${var.environment}."
 }
 
-resource "null_resource" "debug" {
+resource "null_resource" "debug2" {
   provisioner "local-exec" {
     command = "pwd && tree"
   }
