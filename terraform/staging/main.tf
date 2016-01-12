@@ -1,3 +1,7 @@
+atlas {
+  name = "clstokes/staging"
+}
+
 module "common" {
   source      = "../modules/common"
   environment = "${var.environment}"
